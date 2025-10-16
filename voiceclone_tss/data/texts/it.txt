@@ -1,0 +1,1 @@
+Ciao, questo è un esempio di testo in italiano per il sistema TTS.

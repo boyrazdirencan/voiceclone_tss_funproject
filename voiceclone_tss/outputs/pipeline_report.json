@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-10-16T16:59:19.998993",
+  "configuration": {
+    "reference_audio": "data/ref/direncan_ref.wav",
+    "texts_dir": "data/texts",
+    "output_dir": "outputs",
+    "languages": [
+      "fr",
+      "de",
+      "es",
+      "it",
+      "sv",
+      "tr"
+    ],
+    "preprocessing": {
+      "normalize": true,
+      "target_dBFS": -20.0,
+      "fade": true,
+      "fade_duration": 1000
+    }
+  },
+  "results": {
+    "preprocessing": {
+      "success": true,
+      "details": ""
+    },
+    "synthesis": {
+      "success": false,
+      "details": "Synthesis failed"
+    },
+    "post_processing": {
+      "success": true,
+      "details": ""
+    },
+    "completed_at": "2025-10-16T16:59:19.998974"
+  },
+  "log_file": "logs/tts_pipeline_20251016_165919.log",
+  "output_directory": "outputs"
+}

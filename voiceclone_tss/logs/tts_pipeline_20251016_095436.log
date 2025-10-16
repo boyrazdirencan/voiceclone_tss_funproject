@@ -1,0 +1,40 @@
+2025-10-16 09:54:36,121 - INFO - Starting voice cloning TTS pipeline
+2025-10-16 09:54:36,121 - INFO - Configuration: {
+  "reference_audio": "data/ref/direncan_ref.wav",
+  "texts_dir": "data/texts",
+  "output_dir": "outputs",
+  "languages": [
+    "fr",
+    "de",
+    "es",
+    "it",
+    "sv",
+    "tr"
+  ],
+  "preprocessing": {
+    "normalize": true,
+    "target_dBFS": -20.0,
+    "fade": true,
+    "fade_duration": 1000
+  }
+}
+2025-10-16 09:54:36,121 - INFO - Step 1: Running preprocessing...
+2025-10-16 09:54:36,121 - INFO - Validated reference audio: data/ref/direncan_ref.wav
+2025-10-16 09:54:36,121 - INFO - Step 2: Running text preparation...
+2025-10-16 09:54:36,121 - INFO - Found text file for fr: data/texts/fr.txt
+2025-10-16 09:54:36,121 - INFO - Found text file for de: data/texts/de.txt
+2025-10-16 09:54:36,121 - INFO - Found text file for es: data/texts/es.txt
+2025-10-16 09:54:36,122 - INFO - Found text file for it: data/texts/it.txt
+2025-10-16 09:54:36,122 - INFO - Found text file for sv: data/texts/sv.txt
+2025-10-16 09:54:36,122 - INFO - Found text file for tr: data/texts/tr.txt
+2025-10-16 09:54:36,122 - INFO - Step 3: Running synthesis...
+2025-10-16 09:54:36,122 - INFO - Running: TTS synthesis for languages: fr, de, es, it, sv, tr
+2025-10-16 09:54:36,122 - INFO - Command: /opt/anaconda3/bin/python /Users/direncan/Documents/codex/practice/23/voiceclone_tss/scripts/scripts/synthesize_tss_cli.py --texts-dir data/texts --reference-audio data/ref/direncan_ref.wav --output-dir outputs --languages fr de es it sv tr
+2025-10-16 09:54:36,138 - INFO - Command completed in 0.02s
+2025-10-16 09:54:36,138 - ERROR - FAILED: TTS synthesis for languages: fr, de, es, it, sv, tr
+2025-10-16 09:54:36,138 - ERROR - Return code: 2
+2025-10-16 09:54:36,138 - ERROR - Error: /opt/anaconda3/bin/python: can't open file '/Users/direncan/Documents/codex/practice/23/voiceclone_tss/scripts/scripts/synthesize_tss_cli.py': [Errno 2] No such file or directory
+
+2025-10-16 09:54:36,138 - ERROR - Synthesis failed
+2025-10-16 09:54:36,139 - INFO - Report generated: outputs/pipeline_report.json
+2025-10-16 09:54:36,139 - ERROR - Pipeline completed with errors!

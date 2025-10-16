@@ -1,0 +1,1 @@
+Hello, this is a sample text in English that will be used to demonstrate the voice cloning system.

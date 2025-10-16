@@ -1,0 +1,19 @@
+2025-10-16 17:17:13,571 - INFO - Starting voice cloning TTS pipeline
+2025-10-16 17:17:13,572 - INFO - Configuration: {
+  "reference_audio": "data/ref/direncan_ref.wav",
+  "texts_dir": "data/texts",
+  "output_dir": "outputs",
+  "languages": [
+    "fr",
+    "de",
+    "es",
+    "it",
+    "tr"
+  ],
+  "preprocessing": {
+    "normalize": true,
+    "target_dBFS": -20.0,
+    "fade": true,
+    "fade_duration": 1000
+  }
+}

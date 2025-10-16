@@ -1,0 +1,1 @@
+Merhaba, bu Türkçe TTS sistemi için örnek bir metindir.
